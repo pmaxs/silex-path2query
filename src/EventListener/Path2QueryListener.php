@@ -53,7 +53,8 @@ class Path2QueryListener implements EventSubscriberInterface
     {
         if ($event->getRequestType() != HttpKernelInterface::MASTER_REQUEST) return;
 
-        foreach ($this->routes as $route) {
+        foreach ($this->routes as $routeName => $route) {
+            if (\substr($routeName, 0, 1) === '_') continue;
             if (\trim($route->getPath(), '/') == '') continue;
 
             $route
