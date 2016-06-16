@@ -1,8 +1,8 @@
 <?php
 namespace Pmaxs\Silex\Path2Query\Provider;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use Pmaxs\Silex\Path2Query\EventListener\Path2QueryListener;
 
 /**
@@ -13,7 +13,7 @@ class Path2QueryServiceProvider implements ServiceProviderInterface
     /**
      * @inheritdoc
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
     }
 
