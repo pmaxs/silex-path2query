@@ -15,7 +15,7 @@ class Path2QueryListener implements EventSubscriberInterface
     /**
      * Query param name
      */
-    const QUERY_PARAM = '__path2query__';
+    const QUERY_PARAM = '__query__';
 
     /**
      * Route collection
