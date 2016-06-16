@@ -1,0 +1,20 @@
+{
+    "name": "pmaxs/silex-path2query",
+    "type": "library",
+    "description": "Silex service provider that adds query vars to Request from path",
+    "homepage": "https://github.com/pmaxs/silex-path2query",
+    "keywords": ["request", "silex", "symfony"],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pmaxs\\Silex\\Path2Query\\": "src/"
+        }
+    }
+}
