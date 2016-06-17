@@ -5,7 +5,8 @@ Silex service provider that adds query vars to Request from path.
 Installation
 ------------
 
-    composer require pmaxs/silex-path2query
+    composer require pmaxs/silex-path2query "^1.0" # for silex v1.x
+    composer require pmaxs/silex-path2query "^2.0" # for silex v2.x
 
 Usage
 -----
